@@ -9,6 +9,8 @@
   
   <button
     class="follow-toggle"
+    data-user-id='<%=current_user.id%>'
+    data-follow-state='<%=is_following%>'
   >
     <%= is_following ? "Unfollow!" : "Follow!" %>
   </button>
